@@ -19,7 +19,7 @@ yarn-error.log
 /vuexy-shell-scripts
 supervisord.log
 supervisord.pid
-
+.idea/*
 
 ### Dropbox ###
 # Dropbox settings and caches

@@ -46,6 +46,7 @@
           "slug": "layout-blank"
             "icon": "sti-regular sti-multiple-neutral-2",
             "iconset": "streamline",
+            "slug": "members.index/members.create"
         }
       ]
     }

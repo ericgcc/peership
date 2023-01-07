@@ -3,6 +3,8 @@
   <link rel="stylesheet" href="{{ asset(mix('vendors/css/vendors-rtl.min.css')) }}" />
 @else
   <link rel="stylesheet" href="{{ asset(mix('vendors/css/vendors.min.css')) }}" />
+  <link rel="stylesheet" href="{{asset(mix('fonts/fontawesome/css/fontawesome.min.css'))}}">
+  <link rel="stylesheet" href="{{asset(mix('fonts/fontawesome/css/light.min.css'))}}">
 @endif
 
 @yield('vendor-style')

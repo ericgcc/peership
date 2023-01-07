@@ -18,6 +18,8 @@
           "name": "Collapsed Menu",
           "icon": "circle",
           "slug": "collapsed-menu"
+            "icon": "fa-light fa-house",
+            "iconset": "fontawesome",
         },
         {
           "url": "layouts/full",
@@ -42,6 +44,8 @@
           "name": "Layout Blank",
           "icon": "circle",
           "slug": "layout-blank"
+            "icon": "sti-regular sti-multiple-neutral-2",
+            "iconset": "streamline",
         }
       ]
     }

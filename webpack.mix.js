@@ -58,10 +58,12 @@ mixAssetsDir('js/scripts/**/*.js', (src, dest) => mix.scripts(src, dest))
  |--------------------------------------------------------------------------
  */
 
-mixAssetsDir('vendors/js/**/*.js', (src, dest) => mix.scripts(src, dest))
-mixAssetsDir('vendors/css/**/*.css', (src, dest) => mix.copy(src, dest))
+mixAssetsDir('vendors/**/js/**/*.js', (src, dest) => mix.scripts(src, dest))
+mixAssetsDir('vendors/**/css/**/*.css', (src, dest) => mix.copy(src, dest))
+// mixAssetsDir('vendors/peership/js/**/*.js', (src, dest) => mix.scripts(src, dest))
+// mixAssetsDir('vendors/peership/css/**/*.css', (src, dest) => mix.copy(src, dest))
 mixAssetsDir('vendors/**/**/images', (src, dest) => mix.copy(src, dest))
-mixAssetsDir('vendors/css/forms/intl-tel-input/img/', (src, dest) => mix.copy(src, dest))
+mixAssetsDir('vendors/peership/css/forms/intl-tel-input/img/', (src, dest) => mix.copy(src, dest))
 mixAssetsDir('vendors/css/editors/quill/fonts/', (src, dest) => mix.copy(src, dest))
 mixAssetsDir('fonts', (src, dest) => mix.copy(src, dest))
 mixAssetsDir('fonts/**/**/*.css', (src, dest) => mix.copy(src, dest))

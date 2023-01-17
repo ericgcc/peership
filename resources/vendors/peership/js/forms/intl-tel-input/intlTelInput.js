@@ -331,7 +331,7 @@
             }, {
                 key: "_generateMarkup",
                 value: function _generateMarkup() {
-                    // if autocomplete does not exist on the element and its form, then
+                    // if autocomplete does not exist on the element and its forms, then
                     // prevent autocomplete as there's no safe, cross-browser event we can react to, so it can
                     // easily put the plugin in an inconsistent state e.g. the wrong flag selected for the
                     // autocompleted number, which on submit could mean wrong number is saved (esp in nationalMode)
@@ -535,7 +535,7 @@
                     this._handleFlagsContainerKeydown = function(e) {
                         var isDropdownHidden = _this4.countryList.classList.contains("iti__hide");
                         if (isDropdownHidden && [ "ArrowUp", "Up", "ArrowDown", "Down", " ", "Enter" ].indexOf(e.key) !== -1) {
-                            // prevent form from being submitted if "ENTER" was pressed
+                            // prevent forms from being submitted if "ENTER" was pressed
                             e.preventDefault();
                             // prevent event from being handled again by document
                             e.stopPropagation();
@@ -623,7 +623,7 @@
                 key: "_initBlurListeners",
                 value: function _initBlurListeners() {
                     var _this7 = this;
-                    // on blur or form submit: if just a dial code then remove it
+                    // on blur or forms submit: if just a dial code then remove it
                     this._handleSubmitOrBlurEvent = function() {
                         _this7._removeEmptyDialCode();
                     };
@@ -757,7 +757,7 @@
                     var queryTimer = null;
                     this._handleKeydownOnDropdown = function(e) {
                         // prevent down key from scrolling the whole page,
-                        // and enter key from submitting a form etc
+                        // and enter key from submitting a forms etc
                         e.preventDefault();
                         // up and down to navigate
                         if (e.key === "ArrowUp" || e.key === "Up" || e.key === "ArrowDown" || e.key === "Down") _this9._handleUpDownKey(e.key); else if (e.key === "Enter") _this9._handleEnterKey(); else if (e.key === "Escape") _this9._closeDropdown(); else if (/^[a-zA-ZÀ-ÿа-яА-Я ]$/.test(e.key)) {

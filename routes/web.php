@@ -18,8 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [StaterkitController::class, 'home'])->name('home');
 Route::get('home', [StaterkitController::class, 'home'])->name('home');
-//Route::get('members', [MemberController::class, 'index'])->name('members');
-Route::resource('members', MemberController::class, ['only' => ['index', 'create']]);
+Route::resource('members', MemberController::class, ['only' => ['index', 'create', 'store']]);
 
 // Route Components
 Route::get('layouts/collapsed-menu', [StaterkitController::class, 'collapsed_menu'])->name('collapsed-menu');

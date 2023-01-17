@@ -48,6 +48,20 @@
       0 => 'Termwind\\Laravel\\TermwindServiceProvider',
     ),
   ),
+  'pmatseykanets/laravel-sql-migrations' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'SqlMigrations\\SqlMigrationsServiceProvider',
+    ),
+  ),
+  'reliese/laravel' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Reliese\\Coders\\CodersServiceProvider',
+    ),
+  ),
   'spatie/laravel-ignition' => 
   array (
     'providers' => 

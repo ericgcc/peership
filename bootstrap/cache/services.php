@@ -36,6 +36,8 @@
     32 => 'App\\Providers\\EventServiceProvider',
     33 => 'App\\Providers\\RouteServiceProvider',
     34 => 'App\\Providers\\MenuServiceProvider',
+    29 => 'SqlMigrations\\SqlMigrationsServiceProvider',
+    30 => 'Reliese\\Coders\\CodersServiceProvider',
   ),
   'eager' => 
   array (
@@ -54,12 +56,14 @@
     12 => 'Carbon\\Laravel\\ServiceProvider',
     13 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
     14 => 'Termwind\\Laravel\\TermwindServiceProvider',
-    15 => 'Spatie\\LaravelIgnition\\IgnitionServiceProvider',
-    16 => 'App\\Providers\\AppServiceProvider',
-    17 => 'App\\Providers\\AuthServiceProvider',
-    18 => 'App\\Providers\\EventServiceProvider',
-    19 => 'App\\Providers\\RouteServiceProvider',
-    20 => 'App\\Providers\\MenuServiceProvider',
+    15 => 'SqlMigrations\\SqlMigrationsServiceProvider',
+    16 => 'Reliese\\Coders\\CodersServiceProvider',
+    17 => 'Spatie\\LaravelIgnition\\IgnitionServiceProvider',
+    18 => 'App\\Providers\\AppServiceProvider',
+    19 => 'App\\Providers\\AuthServiceProvider',
+    20 => 'App\\Providers\\EventServiceProvider',
+    21 => 'App\\Providers\\RouteServiceProvider',
+    22 => 'App\\Providers\\MenuServiceProvider',
   ),
   'deferred' => 
   array (

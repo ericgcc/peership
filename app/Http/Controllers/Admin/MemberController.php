@@ -22,7 +22,7 @@ class MemberController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the forms for creating a new resource.
      *
      * @return Response
      */
@@ -42,7 +42,20 @@ class MemberController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validation = $request->validate([
+            'first-name' => 'required',
+            'last-name' =>'required',
+            'email' =>'bail|required|email:rfc,dns,strict,spoof|lowercase',
+            'primary-phone' => 'required',
+            'country' => 'required',
+            'language' => 'required',
+            'birth-date' => 'bail|required|before:-15 years',
+            'line-1' => 'required',
+            'address-country' => 'required',
+            'region' => 'required',
+        ], [
+            'birth-date.before' => 'Must be at least 15 years old.',
+        ]);
     }
 
     /**
@@ -57,7 +70,7 @@ class MemberController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Show the forms for editing the specified resource.
      *
      * @param  int  $id
      * @return Response

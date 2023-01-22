@@ -23,8 +23,8 @@
           content="crm, nonprofit, open-source, web app">
     <meta name="author" content="Peership">
     <title>@yield('title') - Peership</title>
-    <link rel="apple-touch-icon" href="{{ asset('images/peership/ico/favicon-32x32.png') }}">
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/peership/logo/favicon.ico') }}">
+    <link rel="apple-touch-icon" href="{{ asset(mix('images/peership/ico/favicon-32x32.png')) }}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset(mix('images/peership/logo/favicon.ico')) }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link

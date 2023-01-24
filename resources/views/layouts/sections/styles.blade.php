@@ -5,8 +5,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300;400;500;600;700&family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
-
-<link rel="stylesheet" href="{{ asset(mix('assets/vendor/fonts/fontawesome.css')) }}" />
+{{-- region >peeship|update: To fontawesome pro 6.2.1 --}}
+<link rel="stylesheet" href="{{asset(mix('assets/vendor/fonts/fontawesome/css/fontawesome.min.css'))}}">
+<link rel="stylesheet" href="{{asset(mix('assets/vendor/fonts/fontawesome/css/light.min.css'))}}">
+<link rel="stylesheet" href="{{asset(mix('assets/vendor/fonts/fontawesome/css/solid.min.css'))}}">
+{{-- endregion --}}
 <link rel="stylesheet" href="{{ asset(mix('assets/vendor/fonts/tabler-icons.css')) }}" />
 <link rel="stylesheet" href="{{ asset(mix('assets/vendor/fonts/flag-icons.css')) }}" />
 

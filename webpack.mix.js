@@ -106,11 +106,13 @@ mixAssetsDir('vendor/scss/**/!(_)*.scss', (src, dest) =>
 mixAssetsDir('vendor/js/**/*.js', (src, dest) => mix.js(src, dest));
 
 // Libs
-mixAssetsDir('vendor/libs/**/*.js', (src, dest) => mix.js(src, dest));
+// >peership|change: add pattern !(peership) to prevent this line process peership extra plugins
+mixAssetsDir('vendor/libs/!(peership)**/*.js', (src, dest) => mix.js(src, dest));
 mixAssetsDir('vendor/libs/**/!(_)*.scss', (src, dest) =>
   mix.sass(src, dest.replace(/\.scss$/, '.css'), { sassOptions })
 );
-mixAssetsDir('vendor/libs/**/*.{png,jpg,jpeg,gif}', (src, dest) => mix.copy(src, dest));
+// >peership|change: add pattern !(peership) to prevent this line process images inside peership/**
+mixAssetsDir('vendor/libs/!(peership)**/*.{png,jpg,jpeg,gif}', (src, dest) => mix.copy(src, dest));
 // Copy task for form validation plugin as premium plugin don't have npm package
 mixAssetsDir('vendor/libs/formvalidation/dist', (src, dest) => mix.copyDirectory(src, dest));
 
@@ -119,7 +121,8 @@ mixAssetsDir('vendor/fonts/*/*', (src, dest) => mix.copy(src, dest));
 mixAssetsDir('vendor/fonts/!(_)*.scss', (src, dest) =>
   mix.sass(src, dest.replace(/(\\|\/)scss(\\|\/)/, '$1css$2').replace(/\.scss$/, '.css'), { sassOptions })
 );
-
+// >peership|add: copy peership-exclusive plugins
+mix.copyDirectory('resources/assets/vendor/libs/peership', 'public/assets/vendor/libs/peership')
 // >peership|add: img/ to resources/ folder
 // Images
 mixAssetsDir('img/**/*', (src, dest) => mix.copy(src, dest))
@@ -134,7 +137,7 @@ mixAssetsDir('css/**/*.css', (src, dest) => mix.copy(src, dest));
 // laravel working crud app related js
 mix.js('resources/js/laravel-user-management.js', 'public/js/');
 
-// mix.copy('node_modules/@fortawesome/fontawesome-free/webfonts/*', 'public/assets/vendor/fonts/fontawesome');
+// >peership|remove: mix.copy('node_modules/@fortawesome/fontawesome-free/webfonts/*', 'public/assets/vendor/fonts/fontawesome');
 mix.copy('node_modules/katex/dist/fonts/*', 'public/assets/vendor/libs/quill/fonts');
 
 mix.version();

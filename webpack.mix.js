@@ -120,6 +120,9 @@ mixAssetsDir('vendor/fonts/!(_)*.scss', (src, dest) =>
   mix.sass(src, dest.replace(/(\\|\/)scss(\\|\/)/, '$1css$2').replace(/\.scss$/, '.css'), { sassOptions })
 );
 
+// >peership|add: img/ to resources/ folder
+// Images
+mixAssetsDir('img/**/*', (src, dest) => mix.copy(src, dest))
 /*
  |--------------------------------------------------------------------------
  | Application assets

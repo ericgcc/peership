@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LocaleController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+// region .: Locale :.
+Route::post('countries', [LocaleController::class, 'countries'])->name('api.countries');
+Route::post('states', [LocaleController::class, 'states'])->name('api.states');
+// endregion

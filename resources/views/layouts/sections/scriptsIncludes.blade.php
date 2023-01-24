@@ -27,7 +27,7 @@
           @endforeach
 
           // Themes
-          @foreach (['default', 'bordered', 'semi-dark'] as $name)
+          @foreach (['default', 'bordered', 'semi-dark', 'peership', 'peership-bordered','peership-semi-dark', 'raspberry'] as $name)
             'theme-{{ $name }}.css': '{{ asset(mix("assets/vendor/css{$configData['rtlSupport']}/theme-{$name}.css")) }}',
             'theme-{{ $name }}-dark.css':
             '{{ asset(mix("assets/vendor/css{$configData['rtlSupport']}/theme-{$name}-dark.css")) }}',

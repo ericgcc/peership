@@ -954,6 +954,22 @@ TemplateCustomizer.THEMES = [
   {
     name: 'theme-bordered',
     title: 'Bordered'
+  },
+  {
+    name: 'theme-peership',
+    title: 'Peership'
+  },
+  {
+    name: 'theme-peership-semi-dark',
+    title: 'Peership Semi Dark'
+  },
+  {
+    name: 'theme-peership-bordered',
+    title: 'Peership Bordered'
+  },
+  {
+    name: 'theme-raspberry',
+    title: 'Raspberry'
   }
 ]
 

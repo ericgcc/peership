@@ -1,14 +1,14 @@
 <?php
   // Variables
   return [
-    "creatorName" => "Pixinvent",
+    "creatorName" => "Peership",  // >peership
     "creatorUrl" => "https://pixinvent.com",
-    "templateName" => "Vuexy",
-    "templateSuffix" => "Bootstrap Admin Template",
+    "templateName" => "Peership",  // >peership
+    "templateSuffix" => null,  // >peership
     "templateVersion" => "1.0.0",
     "templateFree" => false,
-    "templateDescription" => "Start your development with a Dashboard for Bootstrap 5",
-    "templateKeyword" => "dashboard, bootstrap 5 dashboard, bootstrap 5 design, bootstrap 5",
+    "templateDescription" => "Peership is an modern open-source contact relationship management (CRM) webapp made by and for nonprofit organizations.",  // >peership
+    "templateKeyword" => "crm, nonprofit, open-source, web app",  // >peership
     "licenseUrl" => "https://themeforest.net/licenses/standard",
     "livePreview" => "https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/landing-page/",
     "productPage" => "https://1.envato.market/vuexy_admin",

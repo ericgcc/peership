@@ -52,7 +52,15 @@ class Helpers
       'showDropdownOnHover' => [true, false],
       'displayCustomizer' => [true, false],
       'myStyle' => ['light', 'dark'],
-      'myTheme' => ['theme-default', 'theme-bordered', 'theme-semi-dark'],
+      'myTheme' => [
+        'theme-default',
+        'theme-bordered',
+        'theme-semi-dark',
+        'theme-peership',
+        'theme-peership-bordered',
+        'theme-peership-semi-dark',
+        'theme-raspberry'
+      ],
       'myRTLSupport' => [true, false],
       'myRTLMode' => [true, false],
       'menuFixed' => [true, false],

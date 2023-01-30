@@ -45,26 +45,24 @@
         @php
           $activeClass = null;
           $currentRouteName = Route::currentRouteName();
-
           // >peership: Modify active class to match multiple slugs. See also: verticalMenu.json
           //if ($currentRouteName === $menu->slug) {
-          if(str_contains($menu->slug, $currentRouteName)){
+          if(isset($currentRouteName) && str_contains($menu->slug, $currentRouteName)){
             $activeClass = 'active';
           }
           elseif (isset($menu->submenu)) {
-          if (gettype($menu->slug) === 'array') {
-          foreach($menu->slug as $slug){
-          if (str_contains($currentRouteName,$slug) and strpos($currentRouteName,$slug) === 0) {
-          $activeClass = 'active open';
-          }
-          }
-          }
-          else{
-          if (str_contains($currentRouteName,$menu->slug) and strpos($currentRouteName,$menu->slug) === 0) {
-          $activeClass = 'active open';
-          }
-          }
-
+            if (gettype($menu->slug) === 'array') {
+              foreach($menu->slug as $slug){
+                if (str_contains($currentRouteName,$slug) and strpos($currentRouteName,$slug) === 0) {
+                    $activeClass = 'active open';
+                }
+              }
+            }
+            else{
+              if (str_contains($currentRouteName,$menu->slug) and strpos($currentRouteName,$menu->slug) === 0) {
+                $activeClass = 'active open';
+              }
+            }
           }
         @endphp
 

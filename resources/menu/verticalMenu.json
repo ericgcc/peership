@@ -13,7 +13,6 @@
       "url": "members",
       "name": "Members",
       "icon": "menu-icon fa-light fa-users",
-      "iconset": "streamline",
       "slug": "members.index/members.create"
     }
   ]

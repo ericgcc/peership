@@ -15,13 +15,14 @@
 @endsection
 
 @section('content')
-  <h4>Members</h4>
-    <div class="bg-light clearfix">
-        <a class="btn btn-primary float-end" href="{{route('members.create')}}">
-            <i class="fa-light fa-plus"></i>
-            Add member
-        </a>
-    </div>
+  <h4 class="fw-bold py-3 mb-4">Members</h4>
+
+  <div class="clearfix">
+    <a class="btn btn-primary float-end" href="{{route('members.create')}}">
+      <i class="fa-light fa-plus"></i>
+      Add member
+    </a>
+  </div>
 
   <div class="misc-inner p-2 p-sm-3">
     <div class="w-100 text-center">

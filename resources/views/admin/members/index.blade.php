@@ -15,12 +15,9 @@
 @endsection
 
 @section('content')
-  <h4 class="fw-bold py-3 mb-4">Members</h4>
-
   <div class="clearfix">
     <a class="btn btn-primary float-end" href="{{route('members.create')}}">
-      <i class="fa-light fa-plus"></i>
-      Add member
+      <i class="fa-light fa-plus"></i>&nbsp;New member
     </a>
   </div>
 

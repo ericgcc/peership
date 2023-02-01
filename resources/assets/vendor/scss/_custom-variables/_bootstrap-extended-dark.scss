@@ -3,3 +3,14 @@
 //  Copy and paste variables as needed, modify their values, and remove the !default flag.
 //  ===================================================================================================================
 
+// region: >peership|add: Custom bootstrap variables.
+$primary: #0075f2;
+$danger: #FF3864; /*radical red*/
+$info: #00cfe8; /*sky blue crayola*/
+$warning: #F6AE2D; /*honey yellow*/
+$success: #00C081; /*ocean green*/
+$font-family-sans-serif: 'Nunito', 'Public Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+$font-family-monospace: 'Source Code Pro', 'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+$headings-font-family: 'Quicksand', 'Public Sans', sans-serif;
+$font-weight-normal: 500;
+// endregion

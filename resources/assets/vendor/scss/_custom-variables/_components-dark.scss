@@ -1,4 +1,12 @@
 //  ==========================================================================================================
 //  ? TIP:  It is recommended to use this file for overriding component dark variables (_components/_variables-dark.scss).
-//  Copy and paste variables as needed, modify their values, and remove the !default flag. 
+//  Copy and paste variables as needed, modify their values, and remove the !default flag.
 //  ==========================================================================================================
+
+// >peership|modify: Size of the icons in the menu
+$menu-icon-expanded-font-size: 1.1rem;
+
+.iti__country-list{
+  background-color: #434968;
+  border: 0;
+}

@@ -44,8 +44,8 @@ class MemberController extends Controller
     {
         $validation = $request->validate([
             'first-name' => 'required',
-            'last-name' =>'required',
-            'email' =>'bail|required|email:rfc,dns,strict,spoof|lowercase',
+            'last-name' => 'required',
+            'email' => 'bail|required|email:rfc,dns,strict,spoof|lowercase',
             'primary-phone' => 'required',
             'country' => 'required',
             'language' => 'required',
@@ -54,7 +54,18 @@ class MemberController extends Controller
             'address-country' => 'required',
             'region' => 'required',
         ], [
+            'first-name.required' => 'The first name is required.',
+            'last-name.required' => 'The last name is required.',
+            'email.required' => 'The email is required.',
+            'email.email' => 'The value is not a valid email address.',
+            'primary-phone.required' => 'The primary phone is required.',
+            'country.required' => 'The country is required.',
+            'language.required' => 'The language is required.',
+            'birth-date.required' => 'The date of birth is required.',
             'birth-date.before' => 'Must be at least 15 years old.',
+            'line-1.required' => 'The number and street are required.',
+            'address-country.required' => 'The country is required.',
+            'region' => 'The region is required.',
         ]);
     }
 
